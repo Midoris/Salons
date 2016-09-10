@@ -21,7 +21,6 @@ class Model {
             switch response.result {
             case .Success(let data):
                 let json = JSON(data)
-                //print("json is \(json["salons"])")
                 let salonsDict = json.dictionary
                 self.parseSalonsFromJsonDict(salonsDict!)
             case .Failure(let error):
@@ -35,6 +34,7 @@ class Model {
         guard dict != nil else {
             // TODO: notify user
             return }
+        self.salons.removeAll() // clean Salons array in case of reloading 
         for (_, subJson):(String, JSON) in dict!["salons"]! {
             let name = subJson["name"].string
             let website = subJson["website"].string
@@ -46,6 +46,11 @@ class Model {
             let salon = Salon(name: name!, website: website!, originalProfileImageUrl: originalProfileImageUrl!)
             self.salons.append(salon)
         }
+        callUpdateUI()
+    }
+    
+    private func callUpdateUI() {
+        NSNotificationCenter.defaultCenter().postNotificationName(Constants.ParsingKey, object: self)
     }
     
     
