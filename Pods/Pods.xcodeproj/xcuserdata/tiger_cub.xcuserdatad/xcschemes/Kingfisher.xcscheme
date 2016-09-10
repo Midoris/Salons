@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8B7EF83D5AA81FA21AB7A1BEEC69B28C'
-               BlueprintName = 'Pods-Iablonskyi Ievgenii Test Task'
+               BlueprintIdentifier = 'F91226101ECE8FCFD221A3EC54481F82'
+               BlueprintName = 'Kingfisher'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-Iablonskyi Ievgenii Test Task.framework'>
+               BuildableName = 'Kingfisher.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

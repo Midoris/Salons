@@ -8,4 +8,5 @@ use_frameworks!
 target 'Iablonskyi Ievgenii Test Task' do
 pod 'Alamofire'
 pod 'SwiftyJSON'
+pod 'Kingfisher'
 end

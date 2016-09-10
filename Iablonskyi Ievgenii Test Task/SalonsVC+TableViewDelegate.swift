@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 extension SalonsViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -21,8 +22,9 @@ extension SalonsViewController: UITableViewDelegate, UITableViewDataSource {
         let salon = model.salons[indexPath.row]
         cell.nameLabel.text = salon.name
         cell.websiteTextView.text = salon.website
-//        cell.websiteTextView.editable = false
-//        cell.websiteTextView.dataDetectorTypes = .Link
+        let imageUrl = salon.originalProfileImageUrl
+        let placeHoldeImage = UIImage(named: "placeholder")
+        cell.disheImage.kf_setImageWithURL(NSURL(string: imageUrl)!, placeholderImage: placeHoldeImage, optionsInfo: [.Transition(ImageTransition.Fade(0.6))])
         
         return cell
     }
