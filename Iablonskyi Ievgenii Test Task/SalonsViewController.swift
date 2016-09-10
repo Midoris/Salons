@@ -55,7 +55,7 @@ class SalonsViewController: UIViewController {
         showAlert(errorString, controller: self)
     }
     
-    func showAlert(message: NSString, controller: UIViewController){
+    private func showAlert(message: NSString, controller: UIViewController){
         let alert = UIAlertController(title: "Error", message: message as String, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
         controller.presentViewController(alert, animated: true, completion: nil)
