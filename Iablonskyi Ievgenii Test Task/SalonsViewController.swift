@@ -32,7 +32,7 @@ class SalonsViewController: UIViewController {
     
     // MARK: - Methods
     private func setUpController() {
-        model.getDataFromUrl(Constants.APIUrl)
+        refresh()
         refreshControl.addTarget(self, action: #selector(SalonsViewController.refresh), forControlEvents: UIControlEvents.ValueChanged)
         salonsTableView?.addSubview(refreshControl)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SalonsViewController.updateUI), name: Constants.ParsingKey, object: nil)
