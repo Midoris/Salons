@@ -25,7 +25,6 @@ extension SalonsViewController: UITableViewDelegate, UITableViewDataSource {
         let imageUrl = salon.originalProfileImageUrl
         let placeHoldeImage = UIImage(named: "placeholder")
         cell.salonImageView.kf_setImageWithURL(NSURL(string: imageUrl)!, placeholderImage: placeHoldeImage, optionsInfo: [.Transition(ImageTransition.Fade(0.6))])
-        
         return cell
     }
     
