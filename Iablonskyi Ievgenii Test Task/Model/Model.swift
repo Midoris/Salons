@@ -22,12 +22,11 @@ class Model {
             switch response.result {
             case .Success(let data):
                 let json = JSON(data)
-                let salonsDict = json.dictionary
-                self.parseSalonsFromJsonDict(salonsDict!)
-            case .Failure(let error):
-                print("Request failed with error: \(error)")
+                if let salonsDict = json.dictionary {
+                    self.parseSalonsFromJsonDict(salonsDict)
+                }
+            case .Failure(_):
                 self.callNotifyUser()
-
             }
         }
     }

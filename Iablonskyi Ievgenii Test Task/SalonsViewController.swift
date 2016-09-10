@@ -36,7 +36,7 @@ class SalonsViewController: UIViewController {
         refreshControl.addTarget(self, action: #selector(SalonsViewController.refresh), forControlEvents: UIControlEvents.ValueChanged)
         salonsTableView?.addSubview(refreshControl)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SalonsViewController.updateUI), name: Constants.ParsingKey, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SalonsViewController.notifyUser), name: Constants.ErrorKey, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SalonsViewController.handleErrorNotification), name: Constants.ErrorKey, object: nil)
     }
     
     @objc private func updateUI() {
@@ -50,8 +50,9 @@ class SalonsViewController: UIViewController {
         model.getDataFromUrl(Constants.APIUrl)
     }
     
-    @objc private func notifyUser() {
-        showAlert("Something went wrong, please try again.", controller: self)
+    @objc private func handleErrorNotification() {
+        let errorString = "Something went wrong, please try again"
+        showAlert(errorString, controller: self)
     }
     
     func showAlert(message: NSString, controller: UIViewController){
