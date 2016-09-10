@@ -16,6 +16,7 @@ class Model {
     var salons = [Salon]()
     
     // MARK: - Methods
+    // get data from API
     internal func getDataFromUrl(url: String) {
         Alamofire.request(.GET, url).validate().responseJSON { response in
             switch response.result {
@@ -25,14 +26,16 @@ class Model {
                 self.parseSalonsFromJsonDict(salonsDict!)
             case .Failure(let error):
                 print("Request failed with error: \(error)")
-                // TODO: notify user
+                self.callNotifyUser()
+
             }
         }
     }
     
+    // parse data from API
     private func parseSalonsFromJsonDict(dict: [String: JSON]?) {
         guard dict != nil else {
-            // TODO: notify user
+            callNotifyUser()
             return }
         self.salons.removeAll() // clean Salons array in case of reloading 
         for (_, subJson):(String, JSON) in dict!["salons"]! {
@@ -40,7 +43,7 @@ class Model {
             let website = subJson["website"].string
             let originalProfileImageUrl = subJson["profile_image_urls"]["original"].string
             guard name != nil && website != nil && originalProfileImageUrl != nil else {
-                // TODO: notify user
+                callNotifyUser()
                 return
             }
             let salon = Salon(name: name!, website: website!, originalProfileImageUrl: originalProfileImageUrl!)
@@ -49,8 +52,13 @@ class Model {
         callUpdateUI()
     }
     
+    // calls to SalonsVC
     private func callUpdateUI() {
         NSNotificationCenter.defaultCenter().postNotificationName(Constants.ParsingKey, object: self)
+    }
+    
+    private func callNotifyUser() {
+        NSNotificationCenter.defaultCenter().postNotificationName(Constants.ErrorKey, object: self)
     }
     
     

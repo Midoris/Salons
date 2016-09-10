@@ -50,6 +50,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		066CF5011D842E67000DF4A7 /* Suporting files */ = {
+			isa = PBXGroup;
+			children = (
+				068B1F8B1D84001A005A9407 /* AppDelegate.swift */,
+				068B1F8F1D84001A005A9407 /* Main.storyboard */,
+				068B1F921D84001A005A9407 /* Assets.xcassets */,
+				068B1F941D84001A005A9407 /* LaunchScreen.storyboard */,
+				068B1F971D84001A005A9407 /* Info.plist */,
+			);
+			name = "Suporting files";
+			sourceTree = "<group>";
+		};
 		068B1F7F1D84001A005A9407 = {
 			isa = PBXGroup;
 			children = (
@@ -71,13 +83,9 @@
 		068B1F8A1D84001A005A9407 /* Iablonskyi Ievgenii Test Task */ = {
 			isa = PBXGroup;
 			children = (
-				068B1F8B1D84001A005A9407 /* AppDelegate.swift */,
+				066CF5011D842E67000DF4A7 /* Suporting files */,
 				068B1FA61D841CFB005A9407 /* Salon VC Group */,
 				068B1F9F1D840146005A9407 /* Model */,
-				068B1F8F1D84001A005A9407 /* Main.storyboard */,
-				068B1F921D84001A005A9407 /* Assets.xcassets */,
-				068B1F941D84001A005A9407 /* LaunchScreen.storyboard */,
-				068B1F971D84001A005A9407 /* Info.plist */,
 			);
 			path = "Iablonskyi Ievgenii Test Task";
 			sourceTree = "<group>";

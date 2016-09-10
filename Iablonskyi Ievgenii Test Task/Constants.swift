@@ -18,5 +18,6 @@ struct Constants {
     
     // Notification keys
     static let ParsingKey = "ParsingIsDone"
+    static let ErrorKey = "Error"
     
 }
