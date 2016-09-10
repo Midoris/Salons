@@ -18,26 +18,38 @@ class SalonsViewController: UIViewController {
         }
     }
     let model = Model()
-
+    var refreshControl = UIRefreshControl()
+    
     // MARK: - ViewController Life cicle
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = "http://staging.salony.com/v1/salons"
-        model.getDataFromUrl(url)
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SalonsViewController.updateUI), name: Constants.ParsingKey, object: nil)
+        setUpController()
     }
     
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NSNotificationCenter.defaultCenter().removeObserver(self) // remove an observer when an instance is deallocated
     }
     
     // MARK: - Methods
+    private func setUpController() {
+        model.getDataFromUrl(Constants.APIUrl)
+        refreshControl.addTarget(self, action: #selector(SalonsViewController.refresh), forControlEvents: UIControlEvents.ValueChanged)
+        salonsTableView?.addSubview(refreshControl)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SalonsViewController.updateUI), name: Constants.ParsingKey, object: nil)
+    }
+    
     @objc private func updateUI() {
         self.salonsTableView.reloadData()
+        if refreshControl.refreshing {
+            refreshControl.endRefreshing()
+        }
+    }
+    
+    @objc private func refresh() {
+        model.getDataFromUrl(Constants.APIUrl)
     }
 
-
-
+    
+    
 }
 

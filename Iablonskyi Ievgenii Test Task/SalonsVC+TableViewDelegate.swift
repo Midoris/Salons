@@ -12,7 +12,7 @@ import Kingfisher
 
 extension SalonsViewController: UITableViewDelegate, UITableViewDataSource {
     
-    // Table view delegates
+    // Tableview delegate and datasource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.salons.count
     }
@@ -24,10 +24,9 @@ extension SalonsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.websiteTextView.text = salon.website
         let imageUrl = salon.originalProfileImageUrl
         let placeHoldeImage = UIImage(named: "placeholder")
-        cell.disheImage.kf_setImageWithURL(NSURL(string: imageUrl)!, placeholderImage: placeHoldeImage, optionsInfo: [.Transition(ImageTransition.Fade(0.6))])
+        cell.salonImageView.kf_setImageWithURL(NSURL(string: imageUrl)!, placeholderImage: placeHoldeImage, optionsInfo: [.Transition(ImageTransition.Fade(0.6))])
         
         return cell
     }
-    
     
 }

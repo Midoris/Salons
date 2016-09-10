@@ -86,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				068B1F9D1D840141005A9407 /* Model.swift */,
-				068B1FA41D841CAE005A9407 /* Constants.swift */,
 				068B1FA01D840C7B005A9407 /* Salon.swift */,
 			);
 			name = Model;
@@ -98,6 +97,7 @@
 				068B1F8D1D84001A005A9407 /* SalonsViewController.swift */,
 				068B1FA21D841C1B005A9407 /* SalonsVC+TableViewDelegate.swift */,
 				068B1FA71D841D39005A9407 /* SalonTableViewCell.swift */,
+				068B1FA41D841CAE005A9407 /* Constants.swift */,
 			);
 			name = "Salon VC Group";
 			sourceTree = "<group>";

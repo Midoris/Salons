@@ -11,7 +11,6 @@ import UIKit
 class SalonTableViewCell: UITableViewCell {
     
     // MARK: - Variabels
-    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var salonImageView: UIImageView!
     @IBOutlet weak var websiteTextView: UITextView!

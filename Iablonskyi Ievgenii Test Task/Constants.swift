@@ -10,9 +10,13 @@ import Foundation
 
 struct Constants {
     
+    // Urls
+    static let APIUrl = "http://staging.salony.com/v1/salons"
+    
     // Cell IDs
     static let SalonCellID = "SalonCell"
     
     // Notification keys
     static let ParsingKey = "ParsingIsDone"
+    
 }
