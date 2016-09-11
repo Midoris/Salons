@@ -9,7 +9,7 @@
 import XCTest
 @testable import Iablonskyi_Ievgenii_Test_Task
 
-class Iablonskyi_Ievgenii_Test_TaskTests: XCTestCase {
+class SalonsViewControllerTests: XCTestCase {
     
     // MARK: - Variabels
     var salonsVC: SalonsViewController!

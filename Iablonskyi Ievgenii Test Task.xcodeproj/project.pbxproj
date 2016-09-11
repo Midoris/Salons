@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		066CF50B1D844203000DF4A7 /* Iablonskyi_Ievgenii_Test_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CF50A1D844203000DF4A7 /* Iablonskyi_Ievgenii_Test_TaskTests.swift */; };
+		066CF50B1D844203000DF4A7 /* SalonsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CF50A1D844203000DF4A7 /* SalonsViewControllerTests.swift */; };
 		066CF5131D844303000DF4A7 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CF5121D844303000DF4A7 /* ModelTests.swift */; };
 		066CF5171D84F720000DF4A7 /* Salon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068B1FA01D840C7B005A9407 /* Salon.swift */; };
 		068B1F8C1D84001A005A9407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068B1F8B1D84001A005A9407 /* AppDelegate.swift */; };
@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		066CF5081D844203000DF4A7 /* Iablonskyi Ievgenii Test TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Iablonskyi Ievgenii Test TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		066CF50A1D844203000DF4A7 /* Iablonskyi_Ievgenii_Test_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iablonskyi_Ievgenii_Test_TaskTests.swift; sourceTree = "<group>"; };
+		066CF50A1D844203000DF4A7 /* SalonsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonsViewControllerTests.swift; sourceTree = "<group>"; };
 		066CF50C1D844203000DF4A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		066CF5121D844303000DF4A7 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		068B1F881D84001A005A9407 /* Iablonskyi Ievgenii Test Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Iablonskyi Ievgenii Test Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +89,7 @@
 		066CF5091D844203000DF4A7 /* Iablonskyi Ievgenii Test TaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				066CF50A1D844203000DF4A7 /* Iablonskyi_Ievgenii_Test_TaskTests.swift */,
+				066CF50A1D844203000DF4A7 /* SalonsViewControllerTests.swift */,
 				066CF5121D844303000DF4A7 /* ModelTests.swift */,
 				066CF50C1D844203000DF4A7 /* Info.plist */,
 			);
@@ -317,7 +317,7 @@
 			files = (
 				066CF5131D844303000DF4A7 /* ModelTests.swift in Sources */,
 				066CF5171D84F720000DF4A7 /* Salon.swift in Sources */,
-				066CF50B1D844203000DF4A7 /* Iablonskyi_Ievgenii_Test_TaskTests.swift in Sources */,
+				066CF50B1D844203000DF4A7 /* SalonsViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
