@@ -13,7 +13,6 @@ class Iablonskyi_Ievgenii_Test_TaskTests: XCTestCase {
     
     // MARK: - Variabels
     var salonsVC: SalonsViewController!
-    var model: Model?
     
     // MARK: - Tests lifecycle
     override func setUp() {
@@ -29,7 +28,7 @@ class Iablonskyi_Ievgenii_Test_TaskTests: XCTestCase {
     func testTableViewShowedProperly() {
         XCTAssertTrue(salonsVC.salonsTableView != nil, "The table view should be set")
         let expectation = expectationWithDescription("Table View Test")
-        model!.getDataFromUrl(Constants.APIUrl) { _, parsedSalons in
+        salonsVC.model.getDataFromUrl(Constants.APIUrl) { _, parsedSalons in
             let numberOfCells = self.salonsVC.salonsTableView.numberOfRowsInSection(0)
             XCTAssertTrue(numberOfCells == parsedSalons!.count, "Number of cells should have the same as a number of parsed salons")
             expectation.fulfill()
@@ -45,7 +44,6 @@ class Iablonskyi_Ievgenii_Test_TaskTests: XCTestCase {
         UIApplication.sharedApplication().keyWindow?.rootViewController = navigationController
         salonsVC = navigationController?.viewControllers.first as! SalonsViewController
         let _ = salonsVC.view // triggers View's methods.
-        model = Model()
         sleep(1) // prevents occasional test failures.
     }
 
