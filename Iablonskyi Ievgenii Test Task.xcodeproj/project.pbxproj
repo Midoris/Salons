@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		066CF50B1D844203000DF4A7 /* Iablonskyi_Ievgenii_Test_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CF50A1D844203000DF4A7 /* Iablonskyi_Ievgenii_Test_TaskTests.swift */; };
+		066CF5131D844303000DF4A7 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CF5121D844303000DF4A7 /* ModelTests.swift */; };
+		066CF5171D84F720000DF4A7 /* Salon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068B1FA01D840C7B005A9407 /* Salon.swift */; };
 		068B1F8C1D84001A005A9407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068B1F8B1D84001A005A9407 /* AppDelegate.swift */; };
 		068B1F8E1D84001A005A9407 /* SalonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068B1F8D1D84001A005A9407 /* SalonsViewController.swift */; };
 		068B1F911D84001A005A9407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068B1F8F1D84001A005A9407 /* Main.storyboard */; };
@@ -20,7 +23,21 @@
 		4727D7958D03FB89D2CB5A03 /* Pods_Iablonskyi_Ievgenii_Test_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC9FE44E7CA20AF36107FC1 /* Pods_Iablonskyi_Ievgenii_Test_Task.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		066CF50D1D844203000DF4A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 068B1F801D84001A005A9407 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 068B1F871D84001A005A9407;
+			remoteInfo = "Iablonskyi Ievgenii Test Task";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		066CF5081D844203000DF4A7 /* Iablonskyi Ievgenii Test TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Iablonskyi Ievgenii Test TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		066CF50A1D844203000DF4A7 /* Iablonskyi_Ievgenii_Test_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iablonskyi_Ievgenii_Test_TaskTests.swift; sourceTree = "<group>"; };
+		066CF50C1D844203000DF4A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		066CF5121D844303000DF4A7 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		068B1F881D84001A005A9407 /* Iablonskyi Ievgenii Test Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Iablonskyi Ievgenii Test Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		068B1F8B1D84001A005A9407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		068B1F8D1D84001A005A9407 /* SalonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonsViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		066CF5051D844203000DF4A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		068B1F851D84001A005A9407 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,10 +86,21 @@
 			name = "Suporting files";
 			sourceTree = "<group>";
 		};
+		066CF5091D844203000DF4A7 /* Iablonskyi Ievgenii Test TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				066CF50A1D844203000DF4A7 /* Iablonskyi_Ievgenii_Test_TaskTests.swift */,
+				066CF5121D844303000DF4A7 /* ModelTests.swift */,
+				066CF50C1D844203000DF4A7 /* Info.plist */,
+			);
+			path = "Iablonskyi Ievgenii Test TaskTests";
+			sourceTree = "<group>";
+		};
 		068B1F7F1D84001A005A9407 = {
 			isa = PBXGroup;
 			children = (
 				068B1F8A1D84001A005A9407 /* Iablonskyi Ievgenii Test Task */,
+				066CF5091D844203000DF4A7 /* Iablonskyi Ievgenii Test TaskTests */,
 				068B1F891D84001A005A9407 /* Products */,
 				1590A46CA256BD457B047190 /* Pods */,
 				A6D71F8B1D245F601479DD7C /* Frameworks */,
@@ -76,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				068B1F881D84001A005A9407 /* Iablonskyi Ievgenii Test Task.app */,
+				066CF5081D844203000DF4A7 /* Iablonskyi Ievgenii Test TaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +166,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		066CF5071D844203000DF4A7 /* Iablonskyi Ievgenii Test TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 066CF50F1D844203000DF4A7 /* Build configuration list for PBXNativeTarget "Iablonskyi Ievgenii Test TaskTests" */;
+			buildPhases = (
+				066CF5041D844203000DF4A7 /* Sources */,
+				066CF5051D844203000DF4A7 /* Frameworks */,
+				066CF5061D844203000DF4A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				066CF50E1D844203000DF4A7 /* PBXTargetDependency */,
+			);
+			name = "Iablonskyi Ievgenii Test TaskTests";
+			productName = "Iablonskyi Ievgenii Test TaskTests";
+			productReference = 066CF5081D844203000DF4A7 /* Iablonskyi Ievgenii Test TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		068B1F871D84001A005A9407 /* Iablonskyi Ievgenii Test Task */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 068B1F9A1D84001A005A9407 /* Build configuration list for PBXNativeTarget "Iablonskyi Ievgenii Test Task" */;
@@ -160,6 +214,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Ievgenii Iablonskyi";
 				TargetAttributes = {
+					066CF5071D844203000DF4A7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 068B1F871D84001A005A9407;
+					};
 					068B1F871D84001A005A9407 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -179,11 +237,19 @@
 			projectRoot = "";
 			targets = (
 				068B1F871D84001A005A9407 /* Iablonskyi Ievgenii Test Task */,
+				066CF5071D844203000DF4A7 /* Iablonskyi Ievgenii Test TaskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		066CF5061D844203000DF4A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		068B1F861D84001A005A9407 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +311,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		066CF5041D844203000DF4A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066CF5131D844303000DF4A7 /* ModelTests.swift in Sources */,
+				066CF5171D84F720000DF4A7 /* Salon.swift in Sources */,
+				066CF50B1D844203000DF4A7 /* Iablonskyi_Ievgenii_Test_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		068B1F841D84001A005A9407 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +336,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		066CF50E1D844203000DF4A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 068B1F871D84001A005A9407 /* Iablonskyi Ievgenii Test Task */;
+			targetProxy = 066CF50D1D844203000DF4A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		068B1F8F1D84001A005A9407 /* Main.storyboard */ = {
@@ -281,6 +365,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		066CF5101D844203000DF4A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Iablonskyi Ievgenii Test TaskTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midori.s.Iablonskyi-Ievgenii-Test-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Iablonskyi Ievgenii Test Task.app/Iablonskyi Ievgenii Test Task";
+			};
+			name = Debug;
+		};
+		066CF5111D844203000DF4A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Iablonskyi Ievgenii Test TaskTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midori.s.Iablonskyi-Ievgenii-Test-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Iablonskyi Ievgenii Test Task.app/Iablonskyi Ievgenii Test Task";
+			};
+			name = Release;
+		};
 		068B1F981D84001A005A9407 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -393,6 +501,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		066CF50F1D844203000DF4A7 /* Build configuration list for PBXNativeTarget "Iablonskyi Ievgenii Test TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				066CF5101D844203000DF4A7 /* Debug */,
+				066CF5111D844203000DF4A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		068B1F831D84001A005A9407 /* Build configuration list for PBXProject "Iablonskyi Ievgenii Test Task" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

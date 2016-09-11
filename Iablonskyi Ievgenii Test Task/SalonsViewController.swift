@@ -47,7 +47,7 @@ class SalonsViewController: UIViewController {
     }
     
     @objc private func refresh() {
-        model.getDataFromUrl(Constants.APIUrl)
+        model.getDataFromUrl(Constants.APIUrl, completionHandler: nil)
     }
     
     @objc private func handleErrorNotification() {
