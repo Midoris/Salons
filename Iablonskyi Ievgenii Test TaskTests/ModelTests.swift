@@ -12,8 +12,10 @@ import XCTest
 
 class ModelTests: XCTestCase {
     
+    // MARK: - Variabels
     var model: Model?
     
+    // MARK: - Tests lifecycle
     override func setUp() {
         super.setUp()
         model = Model()
@@ -23,10 +25,12 @@ class ModelTests: XCTestCase {
         super.tearDown()
     }
     
+    // MARK: - Tests
     func testGetDataFromUrl() {
-        let expectation = expectationWithDescription("Alamofire")
-        model!.getDataFromUrl(Constants.APIUrl) { parsedSalons in
-            XCTAssertNotNil(parsedSalons, "parsedSalons should not be nil")
+        let expectation = expectationWithDescription("API Test")
+        model!.getDataFromUrl(Constants.APIUrl) { isSuccess, parsedSalons in
+            XCTAssertTrue(isSuccess, "Response failure")
+            XCTAssertNotNil(parsedSalons, "ParsedSalons should not be nil")
             expectation.fulfill()
         }
         waitForExpectationsWithTimeout(5.0, handler: nil)

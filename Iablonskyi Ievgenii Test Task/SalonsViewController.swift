@@ -17,8 +17,8 @@ class SalonsViewController: UIViewController {
             salonsTableView.dataSource = self
         }
     }
-    let model = Model()
-    var refreshControl = UIRefreshControl()
+    internal let model = Model()
+    private let refreshControl = UIRefreshControl()
     
     // MARK: - ViewController Life cicle
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class SalonsViewController: UIViewController {
     }
     
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self) // remove an observer when an instance is deallocated
+        NSNotificationCenter.defaultCenter().removeObserver(self) // remove an observer when an instance is deallocated.
     }
     
     // MARK: - Methods
@@ -60,7 +60,6 @@ class SalonsViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
         controller.presentViewController(alert, animated: true, completion: nil)
     }
-
     
 }
 
